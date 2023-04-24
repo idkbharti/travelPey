@@ -22,8 +22,8 @@ const popular = () => {
       id='slider'
       className='w-[85%]  h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide'
     >
-      {data.map((item) => (
-        <img
+      {data.map((item,i) => (
+        <img key={i}
           className='w-[220px] inline-block p-2 rounded-md cursor-pointer hover:scale-105 ease-in-out duration-300'
           src={item}
           alt='/'
