@@ -13,7 +13,7 @@ const Hero = () => {
       </div>
       <div className="flex flex-col w-1/2 gap-3">
         <div className='text-4xl text-white font-semibold'>FLIGHTS</div>
-        <span className='bg-yellow-500 text-2xl w-[300px] py-1'>Get 20% off Your first flight</span>
+        <span className='bg-yellow-500 text-xl w-[300px] py-1 font-bold'>Get 20% off Your first flight</span>
         <div className="flex flex-row gap-4 text-[#294840]">
           <div className="flex items-center gap-2">
             <input type="radio"></input>
