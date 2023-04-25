@@ -163,7 +163,7 @@ const Hero = () => {
    
   ];
   const [number, setNumber] = useState();
-  const [eclass, setClass] = useState();
+  const [Class, setClass] = useState();
   const [isOpen,setIsOpen]=useState()
   const [isOpenE,setIsEOpen]=useState()
   const [isOpenF,setIsOpenF]=useState()
@@ -268,7 +268,7 @@ const Hero = () => {
                     )}
           </div>
 
-          <div onClick={()=>setshowPiucker(!showPicker)} className="flex flex-row gap-x-2 relative p-2 px-3 items-center focus:outline-none  bg-[#79fffe] rounded-3xl text-[#294840]">
+          <div onClick={()=>setshowPiucker(false)} className="flex flex-row gap-x-2 relative p-2 px-3 items-center focus:outline-none  bg-[#79fffe] rounded-3xl text-[#294840]">
             <BsFillCalendarDateFill
               size={15}
             />
@@ -276,7 +276,7 @@ const Hero = () => {
               type="text"
               className="w-[237px] focus:outline-none bg-[#79fffe] py-[4px] px-3 text-[#294840] "
               placeholder="Departure Date"
-              value={selected}
+              // value={selected}
             />
             {
               showPicker && <div className="absolute top-[40px] left-0 right-[1px] w-full rounded-xl z-[100] text-[#9ca3b7] text-[10px] border-[#dcdcdc] bg-[#F5F5F5]  overflow-x-hidden overflow-y-auto">
@@ -325,7 +325,7 @@ const Hero = () => {
                 className="focus:outline-none"
                 type="text"
                 placeholder="Economy"
-                value={eclass}
+                value={Class}
                 onClick={()=>setIsEOpen(true)}
               ></input>
               <RiArrowDropDownLine size={30} />
@@ -338,7 +338,7 @@ const Hero = () => {
                               key={i}
                               className="w-full px-3 hover:bg-[#ffffff] shadow-sm cursor-pointer rounded-sm leading-10"
                               onClick={() => {
-                                setClass(eclass);
+                                setClass(num);
                                 setIsEOpen(false);
                               }}
                             >
