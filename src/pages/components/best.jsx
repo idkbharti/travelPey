@@ -6,12 +6,13 @@ const best = () => {
   const data = ["/s1.png", "/s2.png", "/s3.png"];
   const slideLeft = () => {
     var slider = document.getElementById("slider");
-    slider.scrollLeft = slider.scrollLeft - 800;
+    slider.scrollLeft = slider.scrollLeft - 200;
   };
 
   const slideRight = () => {
+    alert("clicked")
     var slider = document.getElementById("slider");
-    slider.scrollLeft = slider.scrollLeft + 800;
+    slider.scrollLeft = slider.scrollLeft + 200;
   };
   return (
     <div className="p-20 mob:p-10">

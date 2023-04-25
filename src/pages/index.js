@@ -8,11 +8,13 @@ import People from "../pages/components/people"
 import Popular from "../pages/components/popular"
 import Best from "../pages/components/best"
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
  <>
+
  <Navbar/>
  <Hero/>
  <Popular/>
