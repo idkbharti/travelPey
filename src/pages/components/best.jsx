@@ -29,12 +29,12 @@ const best = () => {
         />
         <div
           id="slider"
-          className="w-[50%] mob:w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide"
+          className="w-[80%] mob:w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide"
         >
           {data.map((item, i) => (
             <Image
               key={i}
-              width={750}
+              width={1020}
               height={500}
               className="inline-block p-2 rounded-md cursor-pointer hover:scale-105 ease-in-out duration-300"
               src={item}
