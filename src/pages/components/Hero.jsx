@@ -8,28 +8,28 @@ import {RxAvatar} from "react-icons/rx"
 const Hero = () => {
   return (
     <div className="w-full flex py-16 flex-col md:flex-row gap-5 bg-[#04cdcd] justify-center items-center">
-      <div className="w-1/2">
+      <div className="md:w-1/2 flex justify-center items-center">
         <Image src="/bags.png" width={800} height={800} />
       </div>
-      <div className="flex flex-col w-1/2 gap-3">
+      <div className="flex flex-col md:w-1/2 mob:items-center md:gap-3">
         <div className='text-4xl text-white font-semibold'>FLIGHTS</div>
         <span className='bg-yellow-500 text-xl w-[300px] py-1 font-bold'>Get 20% off Your first flight</span>
-        <div className="flex flex-row gap-4 text-[#294840]">
+        <div className="flex flex-row gap-4 mob:my-2 mob:justify-center text-[#294840]">
           <div className="flex items-center gap-2">
             <input type="radio"></input>
-            <label className='text-2xl'>One-way</label>
+            <label className='md:text-2xl'>One-way</label>
           </div>
           <div className="flex items-center gap-2">
             <input type="radio"></input>
-            <label className='text-2xl'>Round-trip</label>
+            <label className='md:text-2xl'>Round-trip</label>
           </div>
           <div className="flex items-center gap-2">
             <input type="radio"></input>
-            <label className='text-2xl'>Multi-city</label>
+            <label className='md:text-2xl'>Multi-city</label>
           </div>
         </div>
 
-        <div className="flex flex-row flex-wrap gap-8 mt-8">
+        <div className="flex flex-row flex-wrap mob:justify-center gap-8 mob:gap-4 mt-8">
           <div className="flex flex-row gap-x-2 p-2 px-2 items-center bg-[#79fffe] rounded-3xl text-[#294840]">
             <HiLocationMarker size={20} />
             <div className="px-3 bg-white flex flex-row rounded-2xl">

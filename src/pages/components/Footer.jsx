@@ -8,12 +8,12 @@ const Footer = () => {
   const items = ["Privacy Policy","Terms & Condition","Contact-Us","Cancelation Policy"]
   return (
 <>
-<div className='flex justify-center mb-[-70px]'>
+<div className='flex justify-center md:mb-[-70px] mob:mb-[-25px]'>
   <Image src="/mahel2.png" width={1000} height={500}></Image>
 </div>
 
 <div className=' bg-[#04cdcd]'>
-  <div className='flex flex-row justify-around'>
+  <div className='flex flex-row mob:flex-col justify-around mob:pl-10'>
     <div className='flex flex-col mt-16 text-[#294840]'>
       <div className='text-2xl'>Our Products</div>
       <div>Flights</div>
@@ -30,19 +30,19 @@ const Footer = () => {
   </div>
       </div>
    
-    <div className='flex flex-col mt-16 text-[#294840]'>
+    <div className='flex flex-col  mt-16 text-[#294840]'>
     <div className='text-2xl'> Connect With TravelPey</div>
-    <div className='flex flex-row gap-6 justify-evenly text-[#294840] '>
-      <AiFillFacebook size={40}/>
-       <AiFillInstagram size={40}/>
-       <AiOutlineWhatsApp size={40}/>
+    <div className='flex flex-row gap-6 justify-flex mt-2 text-[#294840] '>
+      <AiFillFacebook size={30}/>
+       <AiFillInstagram size={30}/>
+       <AiOutlineWhatsApp size={30}/>
     </div>
-    <div className='flex flex-row gap-4 text-[#294840] items-center underline '> 
+    <div className='flex flex-row gap-4 mt-2 text-[#294840] items-center underline '> 
       <AiFillPhone></AiFillPhone>
       <span>+1 8886763247</span>
     </div>
 
-    <div className='flex flex-row gap-4 text-[#294840] items-center underline'> 
+    <div className='flex flex-row gap-4 mt-2 text-[#294840] items-center underline'> 
     <AiOutlineMail></AiOutlineMail>
       <span>info@travelPey.com</span>
     </div>
