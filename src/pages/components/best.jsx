@@ -5,13 +5,12 @@ import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 const best = () => {
   const data = ["/s1.png", "/s2.png", "/s3.png"];
   const slideLeft = () => {
-    var slider = document.getElementById("slider");
+    var slider = document.getElementById("slider2");
     slider.scrollLeft = slider.scrollLeft - 200;
   };
 
   const slideRight = () => {
-    alert("clicked")
-    var slider = document.getElementById("slider");
+    var slider = document.getElementById("slider2");
     slider.scrollLeft = slider.scrollLeft + 200;
   };
   return (
@@ -29,7 +28,7 @@ const best = () => {
           size={50}
         />
         <div
-          id="slider"
+          id="slider2"
           className="w-[80%] mob:w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide"
         >
           {data.map((item, i) => (
